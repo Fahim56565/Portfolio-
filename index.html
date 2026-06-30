@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Rivera | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">AR</a>
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#hero" class="nav__link">Home</a></li>
+          <li><a href="#about" class="nav__link">About</a></li>
+          <li><a href="#projects" class="nav__link">Projects</a></li>
+          <li><a href="#skills" class="nav__link">Skills</a></li>
+          <li><a href="#contact" class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <p class="hero__greeting">Hi, I'm</p>
+        <h1 class="hero__name">Alex Rivera</h1>
+        <p class="hero__title">Full-Stack Developer</p>
+        <p class="hero__desc">
+          I build fast, accessible web applications with clean code and great UX.
+        </p>
+        <div class="hero__actions">
+          <a href="#projects" class="btn btn--primary">View Work</a>
+          <a href="#contact" class="btn btn--outline">Contact Me</a>
+        </div>
+        <div class="hero__social">
+          <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="section__title">About Me</h2>
+        <div class="about__grid">
+          <div class="about__image">
+            <div class="about__image-placeholder">
+              <i class="fas fa-user"></i>
+            </div>
+          </div>
+          <div class="about__content">
+            <p>
+              I'm a full-stack developer with 4+ years of experience building
+              web applications. I specialize in React, Node.js, and TypeScript,
+              and I'm passionate about creating intuitive user experiences.
+            </p>
+            <p>
+              When I'm not coding, you'll find me exploring new tech, writing
+              technical blog posts, or contributing to open-source projects.
+            </p>
+            <div class="about__info">
+              <div><strong>Name:</strong> Alex Rivera</div>
+              <div><strong>Email:</strong> alex@example.com</div>
+              <div><strong>Location:</strong> San Francisco, CA</div>
+              <div><strong>Freelance:</strong> Available</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section__title">Projects</h2>
+        <div class="projects__grid">
+          <div class="project-card fade-in">
+            <div class="project-card__image" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+              <i class="fas fa-store"></i>
+            </div>
+            <div class="project-card__body">
+              <h3>ShopEase</h3>
+              <p>Full-featured e-commerce platform with cart, checkout, and admin dashboard.</p>
+              <div class="project-card__tags">
+                <span>React</span><span>Node.js</span><span>MongoDB</span>
+              </div>
+              <div class="project-card__links">
+                <a href="#"><i class="fab fa-github"></i> Code</a>
+                <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card fade-in">
+            <div class="project-card__image" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+              <i class="fas fa-cloud"></i>
+            </div>
+            <div class="project-card__body">
+              <h3>WeatherFlow</h3>
+              <p>Real-time weather dashboard with 7-day forecasts and interactive maps.</p>
+              <div class="project-card__tags">
+                <span>Vue</span><span>D3.js</span><span>OpenWeather API</span>
+              </div>
+              <div class="project-card__links">
+                <a href="#"><i class="fab fa-github"></i> Code</a>
+                <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-card fade-in">
+            <div class="project-card__image" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <div class="project-card__body">
+              <h3>TaskFlow</h3>
+              <p>Kanban-style project management tool with drag-and-drop and real-time sync.</p>
+              <div class="project-card__tags">
+                <span>React</span><span>Firebase</span><span>Tailwind</span>
+              </div>
+              <div class="project-card__links">
+                <a href="#"><i class="fab fa-github"></i> Code</a>
+                <a href="#"><i class="fas fa-external-link-alt"></i> Demo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills section" id="skills">
+      <div class="container">
+        <h2 class="section__title">Skills</h2>
+        <div class="skills__grid">
+          <div class="skill-item">
+            <div class="skill-item__head">
+              <span>HTML / CSS</span>
+              <span class="skill-item__percent">90%</span>
+            </div>
+            <div class="skill-item__bar">
+              <div class="skill-item__fill" data-width="90"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item__head">
+              <span>JavaScript / TypeScript</span>
+              <span class="skill-item__percent">85%</span>
+            </div>
+            <div class="skill-item__bar">
+              <div class="skill-item__fill" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item__head">
+              <span>React / Next.js</span>
+              <span class="skill-item__percent">80%</span>
+            </div>
+            <div class="skill-item__bar">
+              <div class="skill-item__fill" data-width="80"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item__head">
+              <span>Node.js / Express</span>
+              <span class="skill-item__percent">75%</span>
+            </div>
+            <div class="skill-item__bar">
+              <div class="skill-item__fill" data-width="75"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item__head">
+              <span>Python</span>
+              <span class="skill-item__percent">70%</span>
+            </div>
+            <div class="skill-item__bar">
+              <div class="skill-item__fill" data-width="70"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-item__head">
+              <span>SQL / MongoDB</span>
+              <span class="skill-item__percent">75%</span>
+            </div>
+            <div class="skill-item__bar">
+              <div class="skill-item__fill" data-width="75"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container">
+        <h2 class="section__title">Get In Touch</h2>
+        <p class="contact__sub">Have a project in mind? Let's work together.</p>
+        <form class="contact__form" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <span class="form-error"></span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" placeholder="Your Email" required>
+            <span class="form-error"></span>
+          </div>
+          <div class="form-group">
+            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+            <span class="form-error"></span>
+          </div>
+          <button type="submit" class="btn btn--primary">Send Message</button>
+          <p class="form-success" id="formSuccess">Thanks! Your message has been sent.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__social">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="footer__copy">&copy; 2026 Alex Rivera. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
